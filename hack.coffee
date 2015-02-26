@@ -22,6 +22,9 @@ if typeof jQuery == 'undefined'
   `
 
 
+#going inside the ifranes
+# $('iframe').contentWindow.document
+
 startHacking = =>
   if typeof jQuery == 'undefined'
     setTimeout startHacking, 1000
@@ -38,7 +41,7 @@ startHacking = =>
             func = "#{prefix}#{word[0].toUpperCase()}#{word.slice(1)}"
             if el[func]
               console.log func
-        return
+       return
     jQuery('object[type="application/x-shockwave-flash"]').hack()
 
 
