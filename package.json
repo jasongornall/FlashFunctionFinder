@@ -1,0 +1,31 @@
+{
+  "author": "Jason Gornall <gornall.jason@gmail.com>",
+  "main": "./bin/stylus-help",
+  "bugs": {
+    "email": "gornall.jason@gmail.com"
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.x"
+  },
+  "description": "Stylus tools to help with development",
+  "directories": {
+    "bin": "./bin"
+  },
+  "keywords": [
+    "swf",
+    "functions",
+    "find flash functions"
+  ],
+  "name": "FlashFunctionFinder",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jasongornall/FlashFunctionFinder.git"
+  },
+  "scripts": {
+    "prepublish": "cake build"
+  },
+  "version": "1.0.0",
+  "bin": {},
+  "homepage": "https://github.com/jasongornall/FlashFunctionFinder",
+  "license": "ISC"
+}
