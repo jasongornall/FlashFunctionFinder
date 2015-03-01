@@ -30,23 +30,19 @@ getFunc = (word, prefix)=>
     func = "#{prefix}#{word[0].toUpperCase()}#{word.slice(1)}"
 
 startHacking = =>
-  if typeof jQuery == 'undefined'
-    setTimeout startHacking, 1000
-  else
-    jQuery.fn.hack = () ->
-      $objects = $(this)
-      for el, index in $objects
-        console.log "--------------- FLASH ELEMENT #{index} CSS #{cssPath el}---------------"
-        lists = []
-        lists = lists.concat alphabet.split(' '), mediaWords.split(' ')
-
-        for prefix in before
-          for word in lists
-            func = getFunc(word, prefix)
-            if el[func]
-              console.log "FLASH FUNCTION: #{func}"
-       return
-    jQuery('object[type="application/x-shockwave-flash"]').hack()
+  jQuery.fn.hack = () ->
+    $objects = $(this)
+    lists = hack_data.getWords()
+    before = hack_data.getPrependWords()
+    for el, index in $objects
+      console.log "--------------- FLASH ELEMENT #{index} CSS #{cssPath el}---------------"
+      for prefix in before
+        for word in lists
+          func = getFunc(word, prefix)
+          if el[func]
+            console.log "FLASH FUNCTION: #{func}"
+    return
+  jQuery('object[type="application/x-shockwave-flash"]').hack()
 
 
 startHacking()
