@@ -16,7 +16,7 @@
     "functions",
     "find flash functions"
   ],
-  "name": "FlashFunctionFinder",
+  "name": "flashfunctionfinder",
   "repository": {
     "type": "git",
     "url": "git@github.com:jasongornall/FlashFunctionFinder.git"
