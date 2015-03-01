@@ -15,6 +15,7 @@ This is a tool to help web developers discover the undercover functions that are
   you can always specify a manual locaiton for the hack attempt by modifying the above query
   
   
-###Sample output from twitch.tv
+###Sample output from [twitch.tv](http://www.twitch.tv/)
+
 
 ![Alt text](http://content.screencast.com/users/jgornall/folders/Jing/media/1845ccd8-d480-4b21-9ab4-81965f3175e8/00001410.png "Optional title")
