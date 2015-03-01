@@ -33,7 +33,7 @@ if typeof jQuery == 'undefined'
 hack_data = {
   getWords: ->
     lists = []
-    lists = lists.concat alphabet.split(' '), mediaWords.split(' ')
+    lists = lists.concat alphabet.split(' '), mediaWords.split(' '), ['']
     return lists
 
   getPrependWords: ->

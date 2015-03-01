@@ -27,7 +27,11 @@ getFunc = (word, prefix)=>
   else if prefix is 'upper_case'
     func = "#{word}".toUpperCase()
   else
-    func = "#{prefix}#{word[0].toUpperCase()}#{word.slice(1)}"
+    if word
+      end = "#{word[0].toUpperCase()}#{word.slice(1)}"
+    else
+      end = ''
+    func = "#{prefix}#{end}"
 
 startHacking = =>
   jQuery.fn.hack = () ->

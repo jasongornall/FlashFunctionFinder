@@ -23,7 +23,7 @@
     getWords: function() {
       var lists;
       lists = [];
-      lists = lists.concat(alphabet.split(' '), mediaWords.split(' '));
+      lists = lists.concat(alphabet.split(' '), mediaWords.split(' '), ['']);
       return lists;
     },
     getPrependWords: function() {
@@ -63,13 +63,18 @@
 
   getFunc = (function(_this) {
     return function(word, prefix) {
-      var func;
+      var end, func;
       if (prefix === 'lower_case') {
         return func = "" + word;
       } else if (prefix === 'upper_case') {
         return func = ("" + word).toUpperCase();
       } else {
-        return func = "" + prefix + (word[0].toUpperCase()) + (word.slice(1));
+        if (word) {
+          end = "" + (word[0].toUpperCase()) + (word.slice(1));
+        } else {
+          end = '';
+        }
+        return func = "" + prefix + end;
       }
     };
   })(this);
