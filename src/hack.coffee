@@ -61,7 +61,7 @@ startHacking = =>
     lists = hack_data.getWords()
     before = hack_data.getPrependWords()
     for el, index in $objects
-      console.group "--------------- FLASH ELEMENT #{index} CSS #{cssPath el}---------------"
+      console.group "- FLASH ELEMENT #{index} CSS #{cssPath el} -"
       for prefix in before
         for word in lists
           func = getFunc(word, prefix)
