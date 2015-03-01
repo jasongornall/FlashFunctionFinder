@@ -118,7 +118,7 @@
               word = lists[_k];
               func = getFunc(word, prefix);
               if (el[func]) {
-                styledConsoleLog('<span style="color:cadetblue"> FLASH FUNCTION:</span>  <span style="color:green;">' + func + '</span>');
+                styledConsoleLog('<span style="color:cadetblue"> FLASH FUNCTION:</span><span style="color:green;">' + func + '</span>');
               }
             }
           }
