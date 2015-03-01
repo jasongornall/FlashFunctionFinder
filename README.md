@@ -19,3 +19,9 @@ This is a tool to help web developers discover the undercover functions that are
 
 
 ![Alt text](http://content.screencast.com/users/jgornall/folders/Jing/media/1845ccd8-d480-4b21-9ab4-81965f3175e8/00001410.png "Optional title")
+
+###Just for fun let's compare this against the offical api..###
+![](http://content.screencast.com/users/jgornall/folders/Jing/media/b56497a7-db66-498c-bc0e-a07b5e7c146c/00001411.png)
+looks like quite a few undocumented methods there... feel free to ping me with any questions/comments!
+
+happy coding :)
