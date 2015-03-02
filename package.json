@@ -7,14 +7,21 @@
   "devDependencies": {
     "coffee-script": "1.7.x"
   },
-  "description": "Stylus tools to help with development",
+  "description": "A Tool to find functions exposed in a swf",
   "directories": {
     "bin": "./bin"
   },
   "keywords": [
     "swf",
     "functions",
-    "find flash functions"
+    "flash functions",
+    "ExternalInterface",
+    "Flash Function Finder",
+    "Get ExternalInterface definitions in javascript",
+    "flash",
+    "swf",
+    "expose funcitons",
+    "find flash callbacks"
   ],
   "name": "flashfunctionfinder",
   "repository": {
@@ -24,7 +31,7 @@
   "scripts": {
     "prepublish": "cake build"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {},
   "homepage": "https://github.com/jasongornall/FlashFunctionFinder",
   "license": "ISC"
