@@ -4,7 +4,7 @@
 This is a tool to help web developers discover the undercover functions that are exposed from a swf. Essentially just copy and paste the bin directly into your browser console window and it will try to find word matches that are actual functions.
 
 ### Install
- Copy and paste the bin directory straight into your chrome console and it should automatically start finding swf functions on the page. 
+ Copy and paste the [hack.js](https://raw.githubusercontent.com/jasongornall/FlashFunctionFinder/master/bin/hack.js) directory straight into your chrome console and it should automatically start finding swf functions on the page. 
 It will automatically execute and start the process of uncovering the functions.
 
 ### Custom run
